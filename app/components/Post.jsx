@@ -1,4 +1,5 @@
 import React from "react";
+import DeletePostButton from "./DeletePostButton";
 
 export default function Post({ id, title, content, authorName }) {
   return (
@@ -8,6 +9,7 @@ export default function Post({ id, title, content, authorName }) {
       <h3>{authorName}</h3>
       <h4>{title}</h4>
       <p>{content}</p>
+      <DeletePostButton postId={id} />
     </div>
   );
 }
